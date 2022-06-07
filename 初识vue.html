@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>鍒濊瘑vue1</title>
+
+    <!--寮曞叆vue-->
+    <script type="text/javascript" src="/js/vue.js"></script>
+</head>
+
+
+<body>
+    <!--鍑嗗濂戒竴涓鍣�-->
+
+    <div id="root">
+        <h1>hello,{{city}}甯�,{{town}}闀�</h1>
+
+
+        <br>
+
+        <h1>鎸囦护璇硶</h1>
+        <a :href="url" x="hello">鐐规垜鍘荤櫨搴︽悳绱�</a>
+    </div>
+    <script type="text/javascript">
+        Vue.config.productionTip = false; //缁勭粐vue鍦ㄥ惎鍔ㄦ椂鐢熸垚鐢熶骇鎻愮ず
+
+        //鍒涘缓vue瀹炰緥
+        const x = new Vue({
+            el: '#root', //el鐢ㄤ簬鎸囧畾褰撳墠Vue瀹炰緥涓哄摢涓鍣ㄦ湇鍔�,鍊奸€氬父涓篶ss閫夋嫨鍣ㄥ瓧绗︿覆
+            data: {
+                city: '鏄嗗北',
+                town: '鐜夊北',
+                url: 'http://www.baidu.com'
+            }
+        })
+    </script>
+</body>
+
+</html>
